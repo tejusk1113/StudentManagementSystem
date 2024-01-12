@@ -15,4 +15,24 @@ public class NavController {
 	public String mapAddStudent() {
 		return "addStudent";
 	}
+	
+	@GetMapping(value = "/viewInfo")
+	public String mapViewInfo() {
+		return "viewInfo";
+	}
+	
+	@GetMapping(value="/index")
+	public String mapIndex() {
+		return "index";
+	}
+	
+	@GetMapping(value="/updateStudent")
+	public String mapupdateStudent() {
+		return "updateStudent";
+	}
+	
+	@GetMapping(value="/deleteStudent")
+	public String mapdeleteStudent() {
+		return "deleteStudent";
+	}
 }
