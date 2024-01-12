@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>updateStudent</title>
+    <link rel="stylesheet" href="/css/styles.css">
+
+</head>
+<body>
+    <header>
+        <h1>Student Management System</h1>
+    </header>
+
+    <div class="navbarcontainer">
+        <nav>
+            <a href="/api/nav/index">Home Page</a>
+            <a href="/api/nav/addStudent">Add Student Info</a>
+            <a href="/api/nav/viewInfo">View Student Info</a>
+            <a href="/api/nav/deleteStudent">Delete Student Info</a>
+        </nav>
+    </div>
+    <div class="heading">
+        <h2>Update Student Information!</h2>
+    </div>
+    <div class="formcontainer">
+        <form action="/api/updateStudent" method="post">
+        <input type="hidden" name="_method" value="put">
+            <label>Enter Student Id</label><br>
+            <input type="text" name="id" placeholder="Enter student id" class="input"><br>
+            <label>Enter Student Name</label><br>
+            <input type="text" name="name" placeholder="Enter student name" class="input"><br>
+            <label>Enter Student branch</label><br>
+            <input type="text" name="branch" placeholder="Enter student branch" class="input"><br>
+            <input type="submit" value="Update Student" class="submit">
+        </form>
+    </div>
+</body>
+</html>
