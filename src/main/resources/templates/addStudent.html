@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addstudent</title>
+    <link rel="stylesheet" href="/css/styles.css">
+
+</head>
+<body>
+    <header>
+        <h1>Student Management System</h1>
+    </header>
+
+    <div class="navbarcontainer">
+        <nav>
+            <a href="index.html">Home Page</a>
+            <a href="viewInfo.html">View Student Info</a>
+            <a href="updateStudent.html">Update Student Info</a>
+            <a href="deleteStudent.html">Delete Student Info</a>
+        </nav>
+    </div>
+    <div class="heading">
+        <h2>Add Student Information!</h2>
+    </div>
+    <div class="formcontainer">
+        <form action="/api/addStudent" method="post">
+            <label>Enter Student Id</label><br>
+            <input type="text" name="id" placeholder="Enter student id" class="input"><br>
+            <label>Enter Student Name</label><br>
+            <input type="text" name="name" placeholder="Enter student name" class="input"><br>
+            <label>Enter Student branch</label><br>
+            <input type="text" name="branch" placeholder="Enter student branch" class="input"><br>
+            <input type="submit" value="Add Student" class="submit">
+        </form>
+    </div>
+</body>
+</html>
